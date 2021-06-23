@@ -27,7 +27,7 @@ public class CastingPractice {
 		double total = kor + math + eng;
 		double avg = total/3;
 		
-		System.out.println("총점" + total + " 평균 " + avg);
+		System.out.println("총점" +(int) total + " 평균 " + (int) avg);
 		
 	}
 	

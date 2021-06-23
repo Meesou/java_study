@@ -12,6 +12,8 @@ public class VariablePractice {
 		String name = sc.nextLine();
 		System.out.println("나이");
 		int age = sc.nextInt();
+		sc.nextLine(); 
+		
 		System.out.println("성별");
 		char gender = sc.next().charAt(0);
 		System.out.println("키");
@@ -46,6 +48,7 @@ public class VariablePractice {
 	}
 	
 	public void method4() {
+		
 		
 		System.out.println("문자열을 입력하세요");
 		String cha = sc.nextLine();
