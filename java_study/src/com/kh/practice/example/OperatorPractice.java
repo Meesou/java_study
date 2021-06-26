@@ -60,11 +60,14 @@ public class OperatorPractice { // 연산자
 
 		System.out.println("성적");
 		double score = sc.nextDouble();
+		sc.nextLine(); // 넥스트라인 엔터값을 입력해버림 넥스트 더블다음에 넥스트 라인이 오면 중간에 버퍼를 뺴줘야됨 
+						//숫자 뒤에 문자를 입력받을때 쓰라 
 		
 		System.out.println("성별 F/M ");
 		char gender = sc.nextLine().charAt(0);
 		
 		//오류 왜나지 
+
 		if (gender == 'M'||gender == 'm') {
 			System.out.println("남학생");
 		}else if(gender == 'F' || gender =='f' ){
@@ -138,11 +141,11 @@ public class OperatorPractice { // 연산자
 		System.out.println("정수2");
 		int num2 = sc.nextInt();
 		System.out.println("입력");
-		int num3 = sc.nextInt();
+		int input = sc.nextInt();
 		
 		//num1 이하거나 num2 초과면 true
 		//입력할때 num1 은 num2 보다 작아야됨 
-		
+		System.out.println((input <= num1) || (input > num2));
 		
 	}
 	public void method10() {
@@ -152,7 +155,7 @@ public class OperatorPractice { // 연산자
 		int num1 = sc.nextInt();
 		System.out.println("입력 2");
 		int num2 = sc.nextInt();
-		System.out.println("입력 3");
+		System.out.println("입력 3"); 
 		int num3 = sc.nextInt();
 		
 		if( num1 == num2 && num2 == num3 ) {
@@ -165,34 +168,38 @@ public class OperatorPractice { // 연산자
 	
 	public void method11() {
 		
-		//뭐지 ..! 
+		
 		
 		System.out.println("a사원의 연봉 ");
-		double sal = sc.nextDouble() * 0.4;
+		double sal = sc.nextDouble() ; //* 1.4;
 		System.out.println("b사원의 연봉");
 		double sal1 = sc.nextDouble();
 		System.out.println("c 사원의 연봉 ");
-		double sal2 = sc.nextDouble() * 0.15;
+		double sal2 = sc.nextDouble() ; //* 1.15;
 		
-	 
 		
-		if(sal >= 3000 ) {
+		double personA = sal * 1.4;
+		double personB = sal1;
+		double personC = sal2 * 1.15;
+		
+		
+		if(personA >= 3000 ) {
 			System.out.println("a사원 3천 이상 ");
-		}else if(sal <3000) {
+		}else if(personA <3000) {
 			System.out.println("a사원 3천 미만 ");
 			
 		}
 		
-		if(sal1 >= 3000) {
+		if(personB >= 3000) {
 			System.out.println("b사원 3천 이상 ");
-		}else if(sal1 <3000) {
+		}else if(personB <3000) {
 			System.out.println("b사원 3천 미만 ");
 			
 		}
 		
-		if(sal2 >= 3000) {
+		if(personC >= 3000) {
 			System.out.println("c사원 3천 이상 ");
-		}else if(sal2 < 3000) {
+		}else if(personC < 3000) {
 			System.out.println("c사원 3천 미만 ");
 			
 		}

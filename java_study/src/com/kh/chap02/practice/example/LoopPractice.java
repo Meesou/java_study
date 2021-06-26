@@ -24,7 +24,7 @@ public class LoopPractice {
 		System.out.println("정수2");
 		int num2 = sc.nextInt();
 		
-		if(cal.equals("/") && num1 == 0) {
+		if(cal.equals("/") && num2 == 0) {
 			System.out.println("0으로 나눌수 없습니다 다시 입력해주세요");
 			return;
 		}
@@ -34,17 +34,24 @@ public class LoopPractice {
 		switch(cal) { // 연산자 입력 받은
 		
 		case "+":
-			result = num1 + num2;//덧셈 
+			result = num1 + num2;
+			break;
 		case "-":
 			result = num1 - num2;
+			break;
 		case "%":
 			result = num1 % num2; // 몫 나오는애 
+			break;
 		case "*":
 			result = num1 * num2;
+			break;
 		case "/":
-			result = num1 / num2; 
-	//default:
-			//System.out.println("없는 연산자 입니다. 다시 입력해주세요 ");
+			result = num1 / num2;
+			break;
+			//브레이크를 안걸어주면 default랑 같이 계속 출력이 됨 주의 
+		default:
+			System.out.println("없는 연산자 입니다. 다시 입력해주세요 ");
+			continue;
 				
 		}
 		
@@ -94,16 +101,25 @@ public class LoopPractice {
 	}
 	
 	public void method7() {
-		
+		//이거 어케 풀더라 ...? 
 		//1 이상의 숫자를 입력해주세요 1미만의 숫자가 입력되었다면 
-		System.out.println("첫번째 숫자 1 ");
+		
+		System.out.println("첫번째 숫자 1 "); //2
 		int num1 = sc.nextInt();
-		System.out.println("두번째 숫자 2" );
+		System.out.println("두번째 숫자 2" ); // 7 
 		int num2 = sc.nextInt();
+		
+		int num11 = Math.max(num1, num2); // 큰값 뽑기 
+		int num22 = Math.min(num1, num2); // 작은값 뽑기 
+		
+	
+		
+		//234567
 		
 		//두번째 숫자부터 첫번째 숫자출력하기 
 		
-		if( num1 < 1 && num2 < 1 ) {
+		if( num1 > 1 && num2 > 1 ) {
+		//	for ()
 			
 		}
 		
@@ -121,7 +137,7 @@ public class LoopPractice {
 			sum = sum +i;
 		}
 		System.out.println(sum); // 총합계 담김
-		//1+2+3+4+5+6+7+.. 어케 나타내더라...생각을 해보자  
+		//1+2+3+4+5+6+7+.. 어케 나타내더라...생각을 해보자  1+2+3.. = 55 
 				
 	}
 
