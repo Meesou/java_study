@@ -2,7 +2,7 @@ package com.hwhw.model.vo;
 
 public class Person {
 	
-	protected String name;
+	protected String name; //
 	private int age;
 	private double height;
 	private double weight;

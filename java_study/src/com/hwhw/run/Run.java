@@ -46,10 +46,11 @@ public class Run {
 
 			System.out.println("월급을 입력");
 			int salary = sc.nextInt();
+			sc.nextLine(); // 버퍼빼줘야됨... 인트다음 스트링 입력할떄 버퍼 빼주셈 
+
 
 			System.out.println("부서를 입력");
 			String dept = sc.nextLine();
-			sc.nextLine();
 			
 			// 입력받은 정보들을 가지고 매개변수 생성자를 이용하여 객체배열에 객체 생성
 			// 한 명씩 추가 될 때마다 카운트함
@@ -71,7 +72,7 @@ public class Run {
 			}
 			
 		}
-			for(int i = 0; i < emp.length; i++) {
+			for(int i = 0; i < count; i++) {
 				System.out.println(emp[i].toString());
 			
 		}
